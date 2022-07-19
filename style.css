@@ -1,0 +1,113 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Oleo+Script+Swash+Caps:wght@700&family=Poppins:wght@500&display=swap');
+
+/* ---Common styles or utilites---- */
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+/* header style  start*/
+.top-banner{
+    width: 1240px;
+    height: 600px;
+    border-radius: 30px;
+    margin: 0 auto;border-radius: ;
+    background-color: #161616;
+    display: flex;
+}
+.banner-left{
+    color: #FFFFFF;
+    width: 550px;
+    padding: 128px 50px;
+}
+.banner-title{
+    line-height: 50px;
+}
+.banner-right{
+    width: 550px;
+}
+.banner-right  img{
+    width: 100%;
+    margin-top: 21px;
+}
+.banner-button{
+    width: 176px;
+    height: 52px;
+    border-radius: 5px;
+    padding: 16px 25px;
+    background-color: #DD0000;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+.fa-angle-right{
+    padding-left: 7px;
+}
+/* header style end  */
+/* ------container part style-----  */
+.container{
+    width:1240px;
+    margin: auto;
+    display: flex;
+}
+.aside{
+    width: 240px;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-right: 20px;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aside button{
+width: 190px;
+height: 70px;
+margin-top: 22.5px;
+border-radius: 10px;
+font-weight: 600;
+font-size: 18px;
+}
+.button-bottom{
+    background-color: #DD0000;
+    color: #FFFFFF;
+}
+.artical{
+    width: 900px;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 20px;
+}
+.articl-blogs{
+    border: 0.2px solid rgb(231, 229, 229);
+    border-radius: 10px;
+}
+.blogs-image{
+    width: 100%;
+}
+.blogs-text{
+    padding: 15px;
+    
+}
+.blogs-text button{
+    background-color: #FFFFFF;
+    font-size: 17px;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.time{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-clock{
+    padding-right:10px;
+}
+.fa-message{
+    padding-right:10px;
+}
