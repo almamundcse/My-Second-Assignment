@@ -8,9 +8,9 @@ body{
     font-family: 'Oleo Script Swash Caps', cursive;
     font-family: 'Poppins', sans-serif;
     width: 1240px;
-    margin: 10px auto;
+    margin:10px auto;
 }
-/* header style  start*/
+/* header style start  */
 .header{
     width:100%;
     border-radius: 30px;
@@ -57,69 +57,14 @@ body{
     width: 100%;
     height:
 }
-/* animation part  */
-.bubbles img{
-    width: 50px;
-    animation: bubble 7s linear infinite;
-}
-.bubbles{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 40px;
-}
-@keyframes bubble{
-    0%{
-        transform: translate(0);
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-    70%{
-        opacity: 1;
-    }
-    100%{
-        transform: translate(-80vh);
-        opacity: 0;
-    }
-
-}
-.bubbles img:nth-child{
-    width: 20px;
-    animation-delay: 2s;
-}
-.bubbles img:nth-child{
-    animation-delay: 3s;
-}
-.bubbles img:nth-child{
-    width: 15px;
-    animation-delay: 3.5s;
-}
-.bubbles img:nth-child{
-    animation-delay: 4s;
-}
-.bubbles img:nth-child{
-    width: 15px;
-    animation-delay: 4.5s;
-}
-.bubbles img:nth-child{
-    animation-delay: 5s;
-}
-.bubbles img:nth-child{
-    animation-delay: 5.5s;
-}
-/* animatoin end  */
 /* header style end  */
-/* ------container part style-----  */
+/* main container part  */
 .container{
     width: 100%;
     margin-top: 100px;
     display: flex;
 
-}
-/* aside style start   */
+} 
 .aside{
     width: 25%;
     height: 300px;
@@ -138,79 +83,50 @@ body{
     font-weight: 600;
     font-size: 18px;
 }
-.button-top a{
-    text-decoration: none;
-    color: black; 
-}
-.button-bottom{
+.button-top{
     background-color: #DD0000;
+    color: #FFFFFF; 
 }
 .button-bottom a{
     text-decoration: none;
     color: black;
-    
 }
-/* aside style end  */
 .blogs{
-    width: 70%;
-    margin-left:2%;
+    width: 72%;
+    margin-left: 3%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 2%;
+    gap: 3%;
 }
-/* container blog style start  */
 .blog{
-    border: 1px solid rgb(207, 199, 199);
-    border-radius: 10px;
+    border: 1px solid rgb(223, 215, 215);
+    border-radius: 7px;
 }
-.blog-image{
-    width: 100%;
+.country-name{
+width: 100%;
+height: 100px;
+padding-top: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
-.blog-image img{
-    width: 100%;
+.flag h1{
+    padding: 15px;
 }
 .blog-text{
-    padding: 15px;
-    
-}
-.blog-text button{
-    background-color: #FFFFFF;
-    font-size: 17px;
-    padding: 5px 20px;
-    border-radius: 5px;
-}
-.time{
-    width:50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.fa-clock{
-    padding-right:10px;
-}
-.fa-message{
-    padding-right:10px;
-}
-/* hidden part */
-.container-footer{
-    width: 1240px;
+    width: 100%;
     height: 100px;
-    margin: 0 auto;
     text-align: center;
-    display: none;
 }
-.container-footer button{
-    width: 200px;
-    height: 50px;
-    margin-top: 50px;
-    border-radius: 10px;
-    border: none;
-    font-size: 20px;
-    font-weight: 700px;
-    color: #FFFFFF;
-    background-color: #DD0000;
+.blog-text h1{
+    margin: 0px;
 }
-/* foorer style start  */
+.blog-text p{
+    padding-top:5px ;
+    padding-bottom: 10px;
+    margin: 0px;
+}
+/* footer style text  */
 footer{
     width: 100%;
     margin-top: 100px;
@@ -248,11 +164,10 @@ footer{
     padding-left: 20px ;
     color: #998888;
 }
-/* responsive  this site  */
 @media only screen and (max-width:677px) {
     body{
         width: 100%;
-        margin: 10px auto;
+        margin:10px auto;
     }
     .header{
         width: 100%;
@@ -264,6 +179,12 @@ footer{
     .banner-text{
         padding-top:0px;
     }
+    /* .banner-text{
+        padding:0px 10px 0px 10px;
+    } */
+    /* .banner-text1{
+        padding: 10px;
+    } */
     .banner-right{
         width: 100%;
         margin-top: 10px;  
@@ -277,83 +198,70 @@ footer{
         padding:16px 25px;
         margin:20px;
     }
-    /* header end  */
     .container{
         width: 100%;
         flex-direction: column;
-        align-items: center;
-        margin-bottom: 1000px;
-    }
-    .container-footer{
-        margin-bottom: 50px;
     }
     .aside{
-        background-color: white;
+        width: 100%;
+        background-color: #FFFFFF;
     }
     .blogs{
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
     }
-    .blog-image img{
-        width:100%;
-    }
-    /* container end  */
     footer{
         width: 100%;
-        margin-top: 100%;
+        margin-top:55%;
     }
 
 }
-/* tablet responsive */
-@media screen and (min-width:677px) and (max-width:972px) {
+@media only screen and (min-width:677px) and (max-width:975px) {
     body{
         width: 100%;
         margin: 10px auto;
     }
     .header{
         width: 100%;
-        align-items: center;
-    } 
+    }
     .banner-left{
         width: 100%;
-        height: 100%;
+        height:100%
     }
     .banner-right{
-        width: 100%;
+        width: 100%;  
     }
-    .banner-right img{
+    .banner-image{
+        width: 100%;
         height: 100%;
+    }
+    .banner-text{
+        padding:100px 10px 0px 20px;
+    }
+    .banner-text1{
+        padding: 20px;
+    }
+    .banner-button{
+        width: 100%;
+        margin-left:20px;
     }
     .container{
         width: 100%;
-        margin-bottom: 200px;
         flex-direction: column;
-        align-items: center;
     }
     .aside{
-       width: 100%;
-       margin: 0 auto;
-       background-color:#FFFFFF;
-       flex-direction: row;
-       justify-content: space-around;
+        width: 100%;
+        background-color: #FFFFFF;
     }
     .blogs{
         width: 100%;
+        margin: 0;
         grid-template-columns: repeat(2, 1fr);
-    }
-    .blog{
-        align-items: center;
-    } 
-    .blog-image img{
-        width: 100%;
-    }
-    .container-footer{
-        width:100%;
-        text-align: center;
-        display: inline-block;
+        
     }
     footer{
         width: 100%;
         margin-top:10%;
     }
+
 }
